@@ -2,8 +2,7 @@ package com.example.cloudgateway.enums;
 
 public enum SystemRole {
     ROLE_ADMIN,
-    ROLE_CANDIDATE,
-    ROLE_EMPLOYER;
+    ROLE_USER;
 
     public static boolean isRole(String role) {
         try {

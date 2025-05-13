@@ -64,7 +64,7 @@ public class JwtConfig {
                     .parseClaimsJws(token)
                     .getBody();
         } catch (Exception e) {
-            log.error("Invalid or expired JWT token", e);
+            log.error("Invalid or expired JWT token {}", e.getMessage());
             return null;
         }
     }
